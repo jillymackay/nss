@@ -1,13 +1,33 @@
-# nssR
+# nss
+- [nss](#nss)
+    + [What is `nss` for?](#what-is-nss-for)
+    + [Install](#install)
+    + [Notes, Warnings and Fears](#notes-warnings-and-fears)
+    + [License](#license)
 
 
 
+## What is nss for?
+This package aims to provide National Student Survey data in a tidy, documented format. 
 
-## build notes 23/08/2018
-At present - in 2017 the NSS changed and the NSS was strongly recommended not to compile with previous years data
-so only going to do 2017 and 2018 at the moment. Once that's working we'll add back data.
+So far we've only got the top-level results for 2017 and 2018. However, HEFCE, who owned the data prior to Office for Students in 2018, were very concerned that people may compile 2017 and pre-2017 data as there was a significant survey change at that point. 
 
-Don't have permission to share data yet from OfS and so the data withheld from Git is:
+I'll get around to that. 
+
+
+
+## Install
+At present, use only github
+
+
+``` r
+devtools::install_github("jillymackay/nss")
+```
+
+## Notes Warnings and Fears
+### First - there is no data here
+Waiting on permission from Office for Students to collapse their ever expanding list of spreadsheets into a nice tidy .rdata file. Until then my data folders look like this:
+
 
 ### data_raw/
 
@@ -65,4 +85,13 @@ Don't have permission to share data yet from OfS and so the data withheld from G
 
 + White_Rose_University_Consortium.csv
 
-# nss
+License
+-------
+
+The National Student Survey data is coordinated by the Office for Students. It is currently (as of 2018) delivered by Ipsos MORI and results made available by Texuna Technologies.
+https://www.officeforstudents.org.uk/advice-and-guidance/student-information-and-data/national-student-survey-nss/contacts-and-privacy/
+
+All the data used here is publicly available. 
+
+All this code is CC0
+

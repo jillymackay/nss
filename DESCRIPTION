@@ -1,0 +1,20 @@
+Package: nss
+Type: Package
+Title: Standardised data from the National Student survey
+Version: 0.1.0
+Author: Jill R D MacKay <jill.mackay@ed.ac.uk>
+Maintainer: Jill R D MacKay <jill.mackay@ed.ac.uk>
+Description: A package to read and maybe store longitudinal data from the National Student Survey
+    Mostly for my own use but would be happy for others to use.
+License: CC0
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    tidyverse,
+    readxl,
+    magrittr
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.0
