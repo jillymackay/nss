@@ -14,6 +14,9 @@ So far we've only got the top-level results for 2017 and 2018. However, HEFCE, w
 
 I'll get around to that. 
 
+### A word on naming
+Through the gentle guidance of my good colleague ["@ianhandel"](https://github.com/ianhandel) I conceded to naming this package as the lowercase `nss`, and the top level object shares that name. However column headings have capitals because that's easier to read and this is a hill I am prepared to die on. 
+
 
 
 ## Install
