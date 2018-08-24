@@ -28,6 +28,8 @@ devtools::install_github("jillymackay/nss")
 ### First - there is no data here
 Waiting on permission from Office for Students to collapse their ever expanding list of spreadsheets into a nice tidy .rdata file. Until then my data folders look like this:
 
+(NB: I've decided it's okay to provide 2017 & 2018 data in a .rda format here because its all publicly available and part of the same questionnaire)
+
 
 ### data_raw/
 

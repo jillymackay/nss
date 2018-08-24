@@ -2,5 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-data_raw
+data_raw/$
 .RDA
+data/$
