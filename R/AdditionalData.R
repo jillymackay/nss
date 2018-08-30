@@ -133,3 +133,9 @@ QuestionText <- tibble  (Question = c("Q01", "Q02", "Q03", "Q04", "Q05", "Q06", 
                                        "My practice supervisor(s) understood how my placement(s) related to the broader requirements of my course."))
 
 
+# JACS to HECOS Mapping
+submap <- readxl::read_excel("data_raw/data_LP/JACS3-to-HECoS-mapping_2017-06-28.xlsx",
+                             sheet = "Sheet1")
+
+
+

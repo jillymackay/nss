@@ -10,9 +10,11 @@
 ## What is nss for?
 This package aims to provide National Student Survey data in a tidy, documented format. 
 
-So far we've only got the top-level results for 2017 and 2018. However, HEFCE, who owned the data prior to Office for Students in 2018, were very concerned that people may compile 2017 and pre-2017 data as there was a significant survey change at that point. 
+So far we've only got the top-level results for 2017 and 2018.
 
-I'll get around to that. 
+The survey changed from 2016-2017 and HEFCE, who owned the data prior to Office for Students, were very concerned that people may compile 2017 and pre-2017 data as there was a significant survey change at that point. 
+
+That is an issue to sort.
 
 ### A word on naming
 Through the gentle guidance of my good colleague ["@ianhandel"](https://github.com/ianhandel) I conceded to naming this package as the lowercase `nss`, and the top level object shares that name. However column headings have capitals because that's easier to read and this is a hill I am prepared to die on. 
@@ -30,8 +32,6 @@ devtools::install_github("jillymackay/nss")
 ## Notes Warnings and Fears
 ### First - there is no data here
 Waiting on permission from Office for Students to collapse their ever expanding list of spreadsheets into a nice tidy .rdata file. Until then my data folders look like this:
-
-(NB: I've decided it's okay to provide 2017 & 2018 data in a .rda format here because its all publicly available and part of the same questionnaire)
 
 
 ### data_raw/
@@ -89,6 +89,9 @@ Waiting on permission from Office for Students to collapse their ever expanding 
 + University_Alliance.csv
 
 + White_Rose_University_Consortium.csv
+
++ JACS3-to-HECoS-mapping_2017-06-28.xlsx  (From: [https://www.hesa.ac.uk/innovation/hecos](https://www.hesa.ac.uk/innovation/hecos))
+
 
 License
 -------

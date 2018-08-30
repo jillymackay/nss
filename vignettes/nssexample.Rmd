@@ -31,3 +31,11 @@ nss %>%
   select (Provider, Likert, PercRespondents) 
 ```
 
+
+## You can start playing with charts
+
+```{r}
+
+
+
+```
