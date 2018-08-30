@@ -2,19 +2,29 @@
 - [nss](#nss)
     + [What is `nss` for?](#what-is-nss-for)
     + [Install](#install)
-    + [Notes, Warnings and Fears](#notes-warnings-and-fears)
+    + [Data Not Included](#in-git-ignore)
     + [License](#license)
 
 
 
 ## What is nss for?
-This package aims to provide National Student Survey data in a tidy, documented format. 
+This package aims to provide [National Student Survey](https://www.officeforstudents.org.uk/advice-and-guidance/student-information-and-data/national-student-survey-nss/) data in a tidy, documented format. 
 
-So far we've only got the top-level results for 2017 and 2018.
+At present the package provides top-level data from 2017 and 2018 iterations of survey.
+
+
+### Subject Level Data
+As of 2018, the previously used Joint Academic Coding System ( [JACS](https://www.hesa.ac.uk/support/documentation/jacs)) classification of subjects will be replaced by the Higher Education Classification of subjects ( [HECoS](https://www.hesa.ac.uk/innovation/hecos)) codes. In 2018 a third system, the Common Aggregation Hierarchy (or [CAH](https://www.hesa.ac.uk/innovation/hecos)) is being used to bridge the gap between JACS and HECoS. 
+
+**At present I am working on a memory-cheap and future-proof way of joining JACS, CAH and HECoS codes together. Subject level data will follow**
+
+
+### Pre 2017 Data
 
 The survey changed from 2016-2017 and HEFCE, who owned the data prior to Office for Students, were very concerned that people may compile 2017 and pre-2017 data as there was a significant survey change at that point. 
 
-That is an issue to sort.
+In the future I would like to combine this with older datasets. 
+
 
 ### A word on naming
 Through the gentle guidance of my good colleague ["@ianhandel"](https://github.com/ianhandel) I conceded to naming this package as the lowercase `nss`, and the top level object shares that name. However column headings have capitals because that's easier to read and this is a hill I am prepared to die on. 
@@ -22,17 +32,16 @@ Through the gentle guidance of my good colleague ["@ianhandel"](https://github.c
 
 
 ## Install
-At present, use only github
+At present, no plans to push this through CRAN so use GitHub.
 
 
 ``` r
 devtools::install_github("jillymackay/nss")
 ```
 
-## Notes Warnings and Fears
-### First - there is no data here
-Waiting on permission from Office for Students to collapse their ever expanding list of spreadsheets into a nice tidy .rdata file. Until then my data folders look like this:
 
+
+## In Git Ignore
 
 ### data_raw/
 
@@ -90,7 +99,7 @@ Waiting on permission from Office for Students to collapse their ever expanding 
 
 + White_Rose_University_Consortium.csv
 
-+ JACS3-to-HECoS-mapping_2017-06-28.xlsx  (From: [https://www.hesa.ac.uk/innovation/hecos](https://www.hesa.ac.uk/innovation/hecos))
++ HECoS-CAH Version 1.1.xlsx  (From: [https://www.hesa.ac.uk/innovation/hecos](https://www.hesa.ac.uk/innovation/hecos))
 
 
 License
