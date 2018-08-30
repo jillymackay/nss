@@ -16,6 +16,8 @@ The survey changed from 2016-2017 and HEFCE, who owned the data prior to Office 
 
 That is an issue to sort.
 
+**Presently working on a memory-cheap and future-proof way of joining JACS, CAH and HECoS codes together**
+
 ### A word on naming
 Through the gentle guidance of my good colleague ["@ianhandel"](https://github.com/ianhandel) I conceded to naming this package as the lowercase `nss`, and the top level object shares that name. However column headings have capitals because that's easier to read and this is a hill I am prepared to die on. 
 
@@ -90,7 +92,7 @@ Waiting on permission from Office for Students to collapse their ever expanding 
 
 + White_Rose_University_Consortium.csv
 
-+ JACS3-to-HECoS-mapping_2017-06-28.xlsx  (From: [https://www.hesa.ac.uk/innovation/hecos](https://www.hesa.ac.uk/innovation/hecos))
++ HECoS-CAH Version 1.1.xlsx  (From: [https://www.hesa.ac.uk/innovation/hecos](https://www.hesa.ac.uk/innovation/hecos))
 
 
 License
