@@ -113,6 +113,7 @@ NSS17_1 <- read_excel("data_RAW/NSS_taught_all17.xlsx",
 
 
 
+<<<<<<< HEAD
 # nss_1 <- rbind(NSS17_1,NSS18_1)
 
 
@@ -125,4 +126,18 @@ NSS17_1 <- read_excel("data_RAW/NSS_taught_all17.xlsx",
 rm(NSS17_1, NSS18_1)
 
 # devtools::use_data(nss_1, overwrite = TRUE)
+=======
+nss <- rbind(NSS17_A,NSS18_A)
+
+
+nss <- nss %>%
+  left_join(groupings) %>%
+  left_join(QuestionText)
+
+rm(groupings, QuestionText)
+
+rm(NSS17_A, NSS18_A)
+
+devtools::use_data(nss, overwrite = TRUE)
+>>>>>>> b73709b9698edbc8602f042c86ab2d92dfbb80c6
 

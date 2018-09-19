@@ -26,6 +26,8 @@ The survey changed from 2016-2017 and HEFCE, who owned the data prior to Office 
 In the future I would like to combine this with older datasets. 
 
 
+**Presently working on a memory-cheap and future-proof way of joining JACS, CAH and HECoS codes together**
+
 ### A word on naming
 Through the gentle guidance of my good colleague ["@ianhandel"](https://github.com/ianhandel) I conceded to naming this package as the lowercase `nss`, and the top level object shares that name. However column headings have capitals because that's easier to read and this is a hill I am prepared to die on. 
 
