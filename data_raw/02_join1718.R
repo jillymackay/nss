@@ -89,7 +89,7 @@ NSS17_A <- read_excel("data_RAW/NSS_taught_all17.xlsx",
           ConfMax = case_when(Likert != "Agreement" ~ NA_real_, TRUE ~ ConfMax),
           Year = 2017)
 
-nss <- rbind(NSS17_A,NSS18_A)
+nss <- rbind(NSS17_A,NSS18_A, NSS19_A)
 
 
 nss <- nss %>%
@@ -98,7 +98,7 @@ nss <- nss %>%
 
 
 
-rm(NSS17_A, NSS18_A)
+rm(NSS17_A, NSS18_A, NSS19_A)
 
 rm(groupings, QuestionText)
 

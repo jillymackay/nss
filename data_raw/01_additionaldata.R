@@ -54,9 +54,8 @@ groupings <- RG %>%
   left_join(SES) %>%
   left_join(UniAlli) %>%
   left_join(WhiteRose) %>%
-  left_join(The1994) %>%
-  mutate (UKPRN = readr::parse_character(UKPRN),
-          UKPRN = forcats::as_factor(UKPRN))
+  left_join(The1994)  %>%
+  mutate (UKPRN = forcats::as_factor(UKPRN))
 
 rm(RG, CG, GW4, MillPlus, ABSA, N8, NCUK, Oxbridge, SES, UniAlli, WhiteRose, The1994)
 
