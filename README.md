@@ -1,14 +1,11 @@
 [![Travis build status](https://travis-ci.org/jillymackay/nss.svg?branch=master)](https://travis-ci.org/jillymackay/nss)
-
-
-
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/jillymackay/nss?branch=master&svg=true)](https://ci.appveyor.com/project/jillymackay/nss)
 
 
 # nss
 - [nss](#nss)
     + [What is `nss` for?](#what-is-nss-for)
     + [Install](#install)
-    + [Data Not Included](#in-git-ignore)
     + [License](#license)
 
 
@@ -32,10 +29,8 @@ The survey changed from 2016-2017 and HEFCE, who owned the data prior to Office 
 In the future I would like to combine this with older datasets. 
 
 
-**Presently working on a memory-cheap and future-proof way of joining JACS, CAH and HECoS codes together**
-
 ### A word on naming
-Through the gentle guidance of my good colleague ["@ianhandel"](https://github.com/ianhandel) I conceded to naming this package as the lowercase `nss`, and the top level object shares that name. However column headings have capitals because that's easier to read and this is a hill I am prepared to die on. 
+Through the gentle guidance of my good colleague [Ian Handel](https://github.com/ianhandel) I conceded to naming this package as the lowercase `nss`, and the top level object shares that name. However column headings have capitals because that's easier to read and this is a hill I am prepared to die on. 
 
 
 
@@ -49,65 +44,6 @@ devtools::install_github("jillymackay/nss")
 
 
 
-## In Git Ignore
-
-### data_raw/
-
-+ NSS_taught_all12.xlsx (NB - renamed file from HEFCE download)
-
-+ NSS_taught_all12.xlsx
-
-+ NSS_taught_all_14-new.xlsx
-
-+ NSS_taught_all15.xlsx
-
-+ NSS_taught_all16.xlsx
-
-+ NSS_taught_all17.xlsx
-
-+ NSS_taught_all18.xlsx
-
-+ NSSFullTime1_candidate11.xls (NB-renamed file from HEFCE download)
-
-+ NSSFullTime2_candidate11.xls (NB-renamed file from HEFCE download)
-
-+ NSSFullTime08.xls (NB-renamed file from HEFCE download)
-
-+ NSSFullTime109.xls (NB-renamed file from HEFCE download)
-
-+ NSSFullTime110.xls (NB-renamed file from HEFCE download)
-
-+ NSSFullTime209.xls (NB-renamed file from HEFCE download)
-
-+ NSSFullTime210.xls (NB-renamed file from HEFCE download)
-
-### data_raw/data_LP
-**NB: See R/AdditionalData.R**
-+ 1994_Group.csv
-
-+ ABSA.csv
-
-+ Cathedrals_Group.csv
-
-+ GW4.csv
-
-+ Million_Plus.csv
-
-+ N8_Research_Partnership.csv
-
-+ NCUK.csv
-
-+ Oxbridge.csv
-
-+ Russell_Group.csv
-
-+ Science_and_Engineering_South.csv
-
-+ University_Alliance.csv
-
-+ White_Rose_University_Consortium.csv
-
-+ HECoS-CAH Version 1.1.xlsx  (From: [https://www.hesa.ac.uk/innovation/hecos](https://www.hesa.ac.uk/innovation/hecos))
 
 
 License
