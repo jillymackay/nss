@@ -14,7 +14,7 @@ Imports:
     dplyr,
     readxl,
     magrittr
-Suggests: knitr,  rmarkdownr
+Suggests: knitr
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.0
