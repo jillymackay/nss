@@ -1,3 +1,9 @@
+[![Travis build status](https://travis-ci.org/jillymackay/nss.svg?branch=master)](https://travis-ci.org/jillymackay/nss)
+
+
+
+
+
 # nss
 - [nss](#nss)
     + [What is `nss` for?](#what-is-nss-for)
