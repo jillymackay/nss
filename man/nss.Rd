@@ -15,10 +15,14 @@
 \item{SampleSize}{(numeric) - Number of respondents to survey in institution}
 \item{Likert}{(string) - 6 level factor. Likert rating for question, Includes supplied total Agreement, 5-point scale Strongly Disagree to Strongly Agree + Not Applicable}
 \item{PercRespondents}{(numeric) - Percentage of response which chose that Likert rating. Derived for 'NA' from n/SampleSize}
-\item{Year}{(numeric) - What year does data refer to}
 \item{TwoYear}{(string) - Where data failed to meet publication thresholds may be aggregated with 2017 data. Not available for 2017}
+\item{Year}{(numeric) - What year does data refer to}
 \item{Grp_RG}{(string) - Member of Russell Group yes}
 \item{Grp_CG}{(string) - Member of Cathedral Group yes}
+\item{Grp_GW4}{(string) - Member of the GW4 Group yes}
+\item{Grp_MillPlus}{(string) - Member of the MillPlus group yes}
+\item{Grp_ABSA}{(string) - Member of the ABSA group yes}
+\item{Grp_N8}{(string) - Member of the N8 group yes}
 \item{Grp_NCUK}{(string) - Member of NCUK group yes}
 \item{Grp_Oxbrg}{(string) - Member of Oxbridge group yes}
 \item{Grp_SES}{(string) - Member of Science and Engineering South yes}

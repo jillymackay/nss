@@ -1,5 +1,5 @@
 # Data We Want to Add to the NSS
-library(tidyverse)
+library(dplyr)
 
 # UKPRNS Looked up here: http://learning-provider.data.ac.uk/
 
@@ -55,8 +55,8 @@ groupings <- RG %>%
   left_join(UniAlli) %>%
   left_join(WhiteRose) %>%
   left_join(The1994) %>%
-  mutate (UKPRN = parse_character(UKPRN),
-          UKPRN = as_factor(UKPRN))
+  mutate (UKPRN = readr::parse_character(UKPRN),
+          UKPRN = forcats::as_factor(UKPRN))
 
 rm(RG, CG, GW4, MillPlus, ABSA, N8, NCUK, Oxbridge, SES, UniAlli, WhiteRose, The1994)
 
