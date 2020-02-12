@@ -13,7 +13,7 @@
 ## What is nss for?
 This package aims to provide [National Student Survey](https://www.officeforstudents.org.uk/advice-and-guidance/student-information-and-data/national-student-survey-nss/) data in a tidy, documented format. 
 
-At present the package provides top-level data from 2017 and 2018 iterations of survey.
+At present the package provides top-level data from 2017, 2018 and 2019 iterations of survey.
 
 
 ### Subject Level Data
