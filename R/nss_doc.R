@@ -1,9 +1,9 @@
 #' NSS Summary Data (2018)
 #'
-#' This object contains the top level NSS 2018 + 2017 results (updated 02/08/2018)
+#' This object contains the top level NSS 2019 2018 + 2017 results (updated 02/08/2018)
 #'
 #'
-#' @format A data frame containing 183372 rows and 25 columns.
+#' @format A data frame containing 303163 rows and 25 columns.
 #' \describe{
 #'   \item{UKPRN}{(string) - The participant's age}
 #'   \item{Provider}{(string) - The name of the providing institution}
