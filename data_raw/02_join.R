@@ -1,6 +1,52 @@
 library(tidyverse)
 library(readxl)
 
+NSS20_A <- read_excel("data_RAW/NSS_taught_all20_CAH.xlsx",
+                      sheet = "NSS", skip = 3, col_types = "text") %>%
+  rename (StronglyDisagree = "Answered 1",
+          Disagree = "Answered 2",
+          Neither = "Answered 3",
+          Agree = "Answered 4",
+          StronglyAgree = "Answered 5",
+          Question = "Question Number",
+          NotApplic = "N/A",
+          SampleSize = "Sample Size",
+          Agreement = "Actual value",
+          TwoYear = "Two years aggregate data?",
+          ConfMin = "Confidence interval - min",
+          ConfMax ="Confidence interval - max") %>%
+  mutate (StronglyDisagree = parse_double(StronglyDisagree),
+          Disagree = parse_double(Disagree),
+          Neither = parse_double(Neither),
+          Agree = parse_double (Agree),
+          StronglyAgree = parse_double (StronglyAgree),
+          Agreement = parse_double (Agreement),
+          Question = as_factor(Question),
+          NotApplic = parse_double(NotApplic),
+          Response = parse_double (Response),
+          SampleSize = parse_double(SampleSize),
+          NotApplic = (NotApplic/SampleSize)) %>%
+  gather (key = "Likert", value = "PercRespondents",
+          -"UKPRN",
+          -"Provider",
+          -"Question",
+          -ConfMin,
+          -ConfMax,
+          -"Response",
+          -SampleSize,
+          -TwoYear) %>%
+  mutate (UKPRN = as_factor(UKPRN),
+          Provider = as_factor(Provider),
+          TwoYear = as_factor(TwoYear),
+          Likert = as_factor(Likert),
+          ConfMin = parse_double(ConfMin),
+          ConfMin = case_when(Likert != "Agreement" ~ NA_real_, TRUE ~ ConfMin),
+          ConfMax = parse_double(ConfMax),
+          ConfMax = case_when(Likert != "Agreement" ~ NA_real_, TRUE ~ ConfMax),
+          Year = 2020)
+
+
+
 NSS19_A <- read_excel("data_RAW/NSS_taught_all19_CAH.xlsx",
                       sheet = "NSS", skip = 3, col_types = "text") %>%
   rename (StronglyDisagree = "Answered 1",
@@ -133,7 +179,7 @@ NSS17_A <- read_excel("data_RAW/NSS_taught_all17.xlsx",
           ConfMax = case_when(Likert != "Agreement" ~ NA_real_, TRUE ~ ConfMax),
           Year = 2017)
 
-nss <- rbind(NSS17_A,NSS18_A, NSS19_A)
+nss <- rbind(NSS17_A,NSS18_A, NSS19_A, NSS20_A)
 
 
 nss <- nss %>%
@@ -142,7 +188,7 @@ nss <- nss %>%
 
 
 
-rm(NSS17_A, NSS18_A, NSS19_A)
+rm(NSS17_A, NSS18_A, NSS19_A, NSS20_A)
 
 rm(groupings, QuestionText)
 

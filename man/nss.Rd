@@ -3,8 +3,9 @@
 \docType{data}
 \name{nss}
 \alias{nss}
-\title{NSS Summary Data (2018)}
-\format{A data frame containing 303163 rows and 25 columns.
+\title{NSS Summary Data (2020)}
+\format{
+A data frame containing 421337 rows and 25 columns.
 \describe{
 \item{UKPRN}{(string) - The participant's age}
 \item{Provider}{(string) - The name of the providing institution}
@@ -31,7 +32,8 @@
 \item{Grp_The1994}{(string) - WAS a member of the 1994 group yes}
 \item{QuestGroup}{(string) - Question grouping e.g. Assessment and Feedback, Teaching on my Course, etc.}
 \item{QuestText}{(string) - Actual text of question}
-}}
+}
+}
 \source{
 Office for Students - https://www.officeforstudents.org.uk/advice-and-guidance/student-information-and-data/national-student-survey-nss/
 }
@@ -39,7 +41,7 @@ Office for Students - https://www.officeforstudents.org.uk/advice-and-guidance/s
 nss
 }
 \description{
-This object contains the top level NSS 2019 2018 + 2017 results (updated 02/08/2018)
+This object contains the top level NSS 2020 2019 2018 + 2017 results (updated 15/07/2020)
 }
 \details{
 Each row corresponds to a percentage of respondents agreed with that Likert Scale
